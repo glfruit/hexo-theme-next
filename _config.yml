@@ -104,10 +104,10 @@ creative_commons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+# scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -139,6 +139,7 @@ menu_settings:
 # Sidebar Settings
 # See: https://theme-next.org/docs/theme-settings/sidebar
 # ---------------------------------------------------------------
+
 sidebar:
   # Sidebar Position.
   position: left
@@ -163,21 +164,28 @@ sidebar:
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
 
+# Sidebar Avatar
+avatar:
+  # Replace the default image and set the url here.
+  url: /images/avatar.png
+  # If true, the avatar will be dispalyed in circle.
+  rounded: true
+  # If true, the avatar will be rotated with the cursor.
+  rotated: false
+
 # Posts / Categories / Tags in sidebar.
 site_state: true
 
 # Social Links
 # Usage: `Key: permalink || icon`
 # Key is the link label showing to end users.
-# Value before `||` delimeter is the target permalink.
-# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-
+# Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
   GitHub: https://github.com/glfruit || github
   E-Mail: mailto:glfruit80@gmail.com || envelope
+  Weibo: https://weibo.com/p/1005053230781654/home || weibo
   #Google: https://plus.google.com/yourname || google
   Twitter: https://twitter.com/glfruit || twitter
-  微博: https://weibo.com/p/1005053230781654/home
   #FB Page: https://www.facebook.com/yourname || facebook
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
   #YouTube: https://youtube.com/yourname || youtube
@@ -196,18 +204,6 @@ links_settings:
   # Available values: block | inline
   layout: block
 
-# Sidebar Avatar
-avatar:
-  # In theme directory (source/images): /images/avatar.gif
-  # In site directory (source/uploads): /uploads/avatar.gif
-  # You can also use other linking images.
-  url: /images/avatar.png
-  # If true, the avatar would be dispalyed in circle.
-  rounded: true
-  # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
-  opacity: 1
-  # If true, the avatar would be rotated with the cursor.
-  rotated: false
 links:
   #Title: http://yoursite.com
 
@@ -688,7 +684,6 @@ add_this_id:
 # Google Analytics
 google_analytics:
   tracking_id: UA-54350097-1
-  localhost_ignored: true
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
   only_pageview: false
@@ -735,12 +730,6 @@ busuanzi_count:
   total_views_icon: eye
   post_views: true
   post_views_icon: eye
-  site_uv: true
-  site_uv_header: 本站访客数
-  site_uv_footer: 人次
-  page_pv: true
-  page_pv_header: 本文总阅读量
-  page_pv_footer: 次
 
 
 # ---------------------------------------------------------------
