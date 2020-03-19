@@ -1,3 +1,5 @@
+name: English
+
 title:
   archive: Archive
   category: Category
@@ -87,6 +89,7 @@ reward:
   donate: Donate
   wechatpay: WeChat Pay
   alipay: Alipay
+  paypal: PayPal
   bitcoin: Bitcoin
 
 follow_me:
